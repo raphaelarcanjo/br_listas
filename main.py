@@ -1,22 +1,14 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-from flask import Flask
+from flask import Flask, render_template
 import json
 
 app = Flask(__name__)
 
 @app.route("/", methods = ["GET"])
 def index():
-    apresentacao = """
-    <h1>BR LISTAS</h1>
-    <p>Essa pequena API tem o intuto de oferecer listas muito comumente usadas.</p>
-    <p>Todos as respostas para as chamadas via GET são entregues em formato JSON, para maior compatibilidade com a maioria das linguagens.</p>
-    <p>Sinta-se a vontade para divulgar e usar essa API como desejar!</p>
-    <p><a href='https://github.com/raphaelarcanjo/br_listas'>https://github.com/raphaelarcanjo/br_listas</a></p>
-    """
-
-    return apresentacao
+    return render_template("apresentacao.html")
 
 @app.route("/semana", methods = ["GET"])
 def semana():
