@@ -1,8 +1,10 @@
 # br_listas
 ## Listas para uso geral
 
-1. **Dias da semana**
-2. **Estados**
+1. **Dias da semana com siglas**
+2. **Estados/DDD com siglas**
+3. **Regiões com siglas**
+4. **Pontos cardeais com siglas**
 
 Uma API com o objetivo de entregar listas comuns muito usadas em sistemas diversos.
 
