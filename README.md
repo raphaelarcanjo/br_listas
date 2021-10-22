@@ -3,8 +3,9 @@
 
 1. **Dias da semana com siglas**
 2. **Estados/DDD com siglas**
-3. **Regiões com siglas**
-4. **Pontos cardeais com siglas**
+3. **Estados para select input**
+4. **Regiões com siglas**
+5. **Pontos cardeais com siglas**
 
 Uma API com o objetivo de entregar listas comuns muito usadas em sistemas diversos.
 

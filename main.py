@@ -13,13 +13,13 @@ def index():
 @app.route("/semana", methods = ["GET"])
 def semana():
     semana = [
+        {"dia": "Domingo", "sigla": "Dom"},
         {"dia": "Segunda-feira", "sigla": "Seg"},
         {"dia": "Terça-feira", "sigla": "Ter"},
         {"dia": "Quarta-feira", "sigla": "Qua"},
         {"dia": "Quinta-feira", "sigla": "Qui"},
         {"dia": "Sexta-feira", "sigla": "Sex"},
-        {"dia": "Sábado", "sigla": "Sáb"},
-        {"dia": "Domingo", "sigla": "Dom"}
+        {"dia": "Sábado", "sigla": "Sáb"}
     ]
 
     return json.dumps(semana, ensure_ascii = False).encode("utf8")
@@ -54,6 +54,40 @@ def estados():
         {"nome": "São Paulo", "sigla": "SP", "ddd": [11, 12, 13, 14, 15, 16, 17, 18, 19]},
         {"nome": "Sergipe", "sigla": "SE", "ddd": [79]},
         {"nome": "Tocantins", "sigla": "TO", "ddd": [63]}
+    ]
+
+    return json.dumps(estados, ensure_ascii = False).encode("utf8")
+
+@app.route("/estados_select", methods = ["GET"])
+def estados_select():
+    estados = [
+        {"AC": "Acre"},
+        {"AL": "Alagoas"},
+        {"AP": "Amapá"},
+        {"AM": "Amazonas"},
+        {"BA": "Bahia"},
+        {"CE": "Ceará"},
+        {"DF": "Distrito Federal"},
+        {"ES": "Espírito Santo"},
+        {"GO": "Goiás"},
+        {"MA": "Maranhão"},
+        {"MT": "Mato Grosso"},
+        {"MS": "Mato Grosso do Sul"},
+        {"MG": "Minas Gerais"},
+        {"PA": "Pará"},
+        {"PB": "Paraíba"},
+        {"PR": "Paraná"},
+        {"PE": "Pernambuco"},
+        {"PI": "Piauí"},
+        {"RJ": "Rio de Janeiro"},
+        {"RN": "Rio Grande do Norte"},
+        {"RS": "Rio Grande do Sul"},
+        {"RO": "Rondônia"},
+        {"RR": "Roraima"},
+        {"SC": "Santa Catarina"},
+        {"SP": "São Paulo"},
+        {"SE": "Sergipe"},
+        {"TO": "Tocantins"}
     ]
 
     return json.dumps(estados, ensure_ascii = False).encode("utf8")
