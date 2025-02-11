@@ -1,0 +1,9 @@
+[
+    { "dia": "Domingo", "sigla": "Dom" },
+    { "dia": "Segunda-feira", "sigla": "Seg" },
+    { "dia": "Terça-feira", "sigla": "Ter" },
+    { "dia": "Quarta-feira", "sigla": "Qua" },
+    { "dia": "Quinta-feira", "sigla": "Qui" },
+    { "dia": "Sexta-feira", "sigla": "Sex" },
+    { "dia": "Sábado", "sigla": "Sáb" }
+]

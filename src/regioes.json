@@ -1,0 +1,7 @@
+[
+    { "nome": "Centro-Oeste", "sigla": "CO" },
+    { "nome": "Nordeste", "sigla": "NE" },
+    { "nome": "Norte", "sigla": "N" },
+    { "nome": "Sudeste", "sigla": "SE" },
+    { "nome": "Sul", "sigla": "S" }
+]
